@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алексей Агафонов](https://up.htmlacademy.ru/htmlcss/24/user/592167).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Ханагуа](https://htmlacademy.ru/profile/khanagua).
 
 ---
 
