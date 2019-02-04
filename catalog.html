@@ -77,26 +77,31 @@
       <h3>Фильтр:</h3>
       <fieldset>
         <legend>Цена:</legend>
-        <!-- Тут дву-пиновый слайдер -->
+        <input type="range" min="0" max="300" step="10">
+        <p class="filter-price">
+          <input type="text" class="filter-price-min" value="0">
+          <span class="filter-price-separator">-</span>
+          <input type="text" class="filter-price-max" value="30000">
+        </p>
       </fieldset>
 
       <fieldset>
         <legend>Производители:</legend>
         <ul class="manufacturer-list">
           <li class="manufacturer-item">
-            <label><input type="checkbox" name="" id="">Bosch</label>
+            <label><input type="checkbox" name="Bosch" id="filter-manufacturer-Bosch">Bosch</label>
           </li>
           <li class="manufacturer-item">
-            <label><input type="checkbox" name="" id="">Интерскол</label>
+            <label><input type="checkbox" name="Interskol" id="filter-manufacturer-Interskol">Интерскол</label>
           </li>
           <li class="manufacturer-item">
-            <label><input type="checkbox" name="" id="">Makita</label>
+            <label><input type="checkbox" name="Makita" id="filter-manufacturer-Makita">Makita</label>
           </li>
           <li class="manufacturer-item">
-            <label><input type="checkbox" name="" id="">Dewalt</label>
+            <label><input type="checkbox" name="Dewalt" id="filter-manufacturer-Dewalt">Dewalt</label>
           </li>
           <li class="manufacturer-item">
-            <label><input type="checkbox" name="" id="">Hitachi</label>
+            <label><input type="checkbox" name="Hitachi" id="filter-manufacturer-Hitachi">Hitachi</label>
           </li>
         </ul>
       </fieldset>
@@ -105,10 +110,10 @@
         <legend>Питание:</legend>
         <ul class="connection-list">
           <li class="connection-item">
-            <label><input type="radio" name="connection" id="">Аккумуляторные</label>
+            <label><input type="radio" name="connection" id="filter-connection-battery">Аккумуляторные</label>
           </li>
           <li class="connection-item">
-            <label><input type="radio" name="connection" id="">Сетевые</label>
+            <label><input type="radio" name="connection" id="filter-connection-network">Сетевые</label>
           </li>
         </ul>
       </fieldset>
