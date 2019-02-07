@@ -15,7 +15,7 @@
       </p>
       <p class="top-menu-search">
         Поиск:
-        <input type="text" id="search">
+        <input type="text" id="search" aria-label="Поиск по сайту">
       </p>
       <p class="top-menu-marker">
         <a href="markers.html">Закладки: 0</a>
@@ -229,7 +229,7 @@
     <section class="contacts-map">
       <h2>КОНТАКТЫ</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <img src="img/map.png" alt="Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <img src="img/map-mini.jpg" alt="Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <a href="">Заблудились? Напишите нам!</a>
     </section>
   </main>
@@ -282,22 +282,22 @@
 
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="POST" class="write-us">
+    <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
       <p>
         <label for="person-name">Ваше имя:</label>
-        <input type="text" class="write-us-person-name" id="person-name" placeholder="Имя Фамилия">
+        <input class="write-us-person-name" type="text" name="person-name" id="modal-person-name" placeholder="Имя Фамилия" aria-label="Укажите ваше имя и фамилию">
       </p>
       <p>
         <label for="person-email">Ваш e-mail:</label>
-        <input type="text" class="write-us-email" id="person-email" placeholder="email@example.com">
+        <input class="write-us-email" type="text" name="person-email" id="modal-person-email" placeholder="email@example.com" aria-label="Укажите вашу электронную почту">
       </p>
       <p>
         <label for="person-message">Текст письма:</label>
-        <textarea type="text" class="write-us-message" id="person-message" placeholder="В свободной форме"></textarea>
+        <textarea class="write-us-message" name="person-message" id="modal-person-message" placeholder="В свободной форме" aria-label="В свободной форме оставьте свое обращение"></textarea>
       </p>
       <button class="btn btn-write-us-submit" type="submit">Отправить</button>
-      <button class="btn btn-close" type="button">Закрыть</button>
     </form>
+    <button class="btn btn-close" type="button">Закрыть</button>
   </section>
 
   <section class="modal modal-map">
