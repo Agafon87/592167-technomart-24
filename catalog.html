@@ -74,7 +74,54 @@
 
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь опишем фильтр -->
+      <b>Фильтр:</b>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Цена:</legend>
+          <input type="range" min="0" max="30000" step="10" name="price-range" id="filter-price-range" aria-label="Фильтр цены в виде ползунка">
+          <p class="filter-price">
+            <input class="filter-price-min" type="text" value="0" name="price-range-min" id="filter-price-range-min" aria-label="Минимальное значение фильтра цены">
+            <span class="filter-price-separator">-</span>
+            <input class="filter-price-max" type="text" value="30000" name="price-range-max" id="filter-price-range-max" aria-label="Максимальное значение фильтра цены">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul class="manufacturer-list">
+            <li class="manufacturer-item">
+              <label><input class="filter-checkbox" type="checkbox" name="Bosch" id="filter-manufacturer-Bosch">Bosch</label>
+            </li>
+            <li class="manufacturer-item">
+              <label><input class="filter-checkbox" type="checkbox" name="Interskol" id="filter-manufacturer-Interskol">Интерскол</label>
+            </li>
+            <li class="manufacturer-item">
+              <label><input class="filter-checkbox" type="checkbox" name="Makita" id="filter-manufacturer-Makita">Makita</label>
+            </li>
+            <li class="manufacturer-item">
+              <label><input class="filter-checkbox" type="checkbox" name="Dewalt" id="filter-manufacturer-Dewalt">Dewalt</label>
+            </li>
+            <li class="manufacturer-item">
+              <label><input class="filter-checkbox" type="checkbox" name="Hitachi" id="filter-manufacturer-Hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul class="connection-list">
+            <li class="connection-item">
+              <label><input class="filter-radio" type="radio" value="battery" name="connection" id="filter-connection-battery">Аккумуляторные</label>
+            </li>
+            <li class="connection-item">
+              <label><input class="filter-radio" type="radio" value="network" name="connection" id="filter-connection-network">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">показать</button>
+      </form>
+
     </section>
 
     <section class="sort">
