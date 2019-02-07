@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.main-header a,
+.advantages-list a {
+  text-decoration: none;
+}
+
+.page-top-menu {
+  background-color: rgb(41, 52, 73);
+}
+
+.main-header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgb(255, 255, 255);
+  width: 940px;
+}
+
+.main-header-top-menu a {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  height: 28px;
+  width: 150px;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.top-menu-logo {
+  width: 220px;
+  height: 42px;
+  vertical-align: middle;
+  background-color: rgb(238, 54, 67);
+}
+
+.top-menu-logo a {
+  padding: 0;
+}
+
+.top-menu-search {
+  margin-left: auto;
+  width: 220px;
+}
+
+.top-menu-basket {
+  margin-left: auto;
+}
+
+
+.main-header-top-menu p {
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu-order a {
+  background-color: rgb(99, 166, 62);
+}
+
+.top-menu-order a:hover,
+.top-menu-order a:focus {
+  background-color: rgb(95, 187, 45);
+}
+
+.top-menu-order a:active {
+  background-color: rgb(81, 133, 52);
+}
+
+.main-header-authentication {
+  margin: 0 auto;
+  width: 940px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.main-title {
+  font-style: italic;
+  color: rgb(238, 54, 67);
+}
+
+.main-title h1 {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.site-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(50, 66, 92);
+}
+
+.site-address a {
+  font-size: 21px;
+  line-height: 21px;
+  color: rgb(238, 54, 67);
+}
+
+.site-authentication,
+.advantages-list {
+  list-style: none;
+}
+
+.main-authentication a {
+  color: rgb(0, 0, 0);
+}
+
+.main-navigation {
+  width: 940px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 17px;
+  background-color: rgb(50, 66, 92);
+  border-bottom: 5px solid rgb(41, 52, 73);
+}
+
+.main-navigation a {
+  color: rgb(255, 255, 255);
+}
+
+.site-navigation {
+  margin: 0;
+  /* padding-bottom: 20px; */
+  /* padding-top: 20px; */
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.site-navigation a {
+  display: inline-block;
+  height: 38px;
+  width: 127px;
+  text-align: center;
+  padding-top: 22px;
+}
+
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: rgb(41, 52, 73);
+}
+
+.site-navigation a:active {
+  background-color: rgb(29, 39, 57);
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.advantages-item-card {
+  position: relative;
+  width: 300px;
+  height: 123px;
+  border: 1px solid black;
+  color: rgb(255, 255, 255);
+}
+
+.advantages-item-card span {
+  position: absolute;
+  top: 26px;
+  left: 22px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.advantages-item-card a {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 26px;
+  width: 135px;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+  background-color: rgb(255, 191, 71);
+}
+
+.card-2 {
+  background-color: rgb(59, 188, 227);
+}
+
+.card-3 {
+  background-color: rgb(220, 145, 216);
+}
+
+.card-4 {
+  background-color: rgb(142, 215, 143);
+}
+
+.card-5 {
+  background-color: rgb(255, 191, 71);
+}
+
+
+.advantages-item-card a:hover,
+.advantages-item-card a:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.advantages-item-card a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.advantages-item-image-1 {
+  position: absolute;
+  top: 31px;
+  right: 43px;
+}
+
+.advantages-item-image-2 {
+  position: absolute;
+  top: 33px;
+  right: 28px;
+}
+
+.advantages-item-image-3 {
+  position: absolute;
+  top: 31px;
+  right: 31px;
+}
+
+.advantages-item-image-4 {
+  position: absolute;
+  top: 26px;
+  right: 45px;
+}
+
+.advantages-item-image-5 {
+  position: absolute;
+  top: 32px;
+  right: 31px;
+}

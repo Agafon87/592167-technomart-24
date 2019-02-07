@@ -3,40 +3,48 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Техномарт</title>
 </head>
 
 <body>
 
   <header class="main-header">
-    <div class="main-header-top-menu">
-      <p class="top-menu-label">
-        <a href="">Техномарт</a>
-      </p>
-      <p class="top-menu-search">
-        Поиск:
-        <input type="text" id="search">
-      </p>
-      <p class="top-menu-marker">
-        <a href="markers.html">Закладки: 0</a>
-      </p>
-      <p class="top-menu-basket">
-        <a href="basket.html">Корзина: 0</a>
-      </p>
-      <p class="top-menu-order">
-        <a href="order.html">Оформить заказ</a>
-      </p>
+    <div class="page-top-menu">
+      <div class="main-header-top-menu">
+        <p class="top-menu-logo">
+          <a href="">
+            <img src="img/background-logo.jpg" alt="Описание" width="220" height="47">
+          </a>
+        </p>
+        <p class="top-menu-search">
+          <label class="visually-hidden"></label>
+          <input type="text" id="search" placeholder="Поиск:">
+        </p>
+        <p class="top-menu-marker">
+          <a href="markers.html">Закладки: 0</a>
+        </p>
+        <p class="top-menu-basket">
+          <a href="basket.html">Корзина: 0</a>
+        </p>
+        <p class="top-menu-order">
+          <a href="order.html">Оформить заказ</a>
+        </p>
+      </div>
     </div>
 
 
     <div class="main-header-authentication">
       <div class="main-title">
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <h1>Интернет-магазин <br>
+          строительных материалов <br>
+          и инструментов для ремонта</h1>
       </div>
       <p class="site-address">
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        г. Санкт-Петербург, ул. Б. Конюшенная,
-        д. 19/8
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
       <div class="main-authentication">
         <ul class="site-authentication">
@@ -64,34 +72,44 @@
     <section class="advantages">
       <ul class="advantages-list">
         <li>
-          Материалы
-          <a href="materials.html">на любой вкус</a>
-          <span class="advantages-item-materials">фоновое изображение</span>
+          <div class="advantages-item-card card-1">
+            <span>Материалы</span>
+            <a href="materials.html">на любой вкус</a>
+            <img class="advantages-item-image-1" src="img/icon-1.svg" alt="Фоновое изображение материалов">
+          </div>
         </li>
         <li>
-          Инструмент
-          <a href="instrument.html">НА ВСЕ СЛУЧАИ</a>
-          <span class="advantages-item-instrument">фоновое изображение</span>
+          <div class="advantages-item-card card-2">
+            <span>Инструмент</span>
+            <a href="instrument.html">на все случаи</a>
+            <img class="advantages-item-image-2" src="img/icon-2.svg" alt="Фоновое изображение материалов">
+          </div>
         </li>
         <li>
-          Техника
-          <a href="technicals.html">для стройки</a>
-          <span class="advantages-item-technicals">фоновое изображение</span>
+          <div class="advantages-item-card card-3">
+            <span>Техника</span>
+            <a href="technicals.html">для стройки</a>
+            <img class="advantages-item-image-3" src="img/icon-3.svg" alt="Фоновое изображение материалов">
+          </div>
         </li>
         <li>
-          Скидки 50%
-          <a href="discount.html">На 350 ТОВАРОВ</a>
-          <span class="advantages-item-discount">фоновое изображение</span>
+          <div class="advantages-item-card card-4">
+            <span>Скидки 50%</span>
+            <a href="discount.html">на 350 товаров</a>
+            <img class="advantages-item-image-4" src="img/icon-4.svg" alt="Фоновое изображение материалов">
+          </div>
         </li>
         <li>
-          Доставка
-          <a href="delivery.html">бесплатно</a>
-          <span class="advantages-item-delivery">фоновое изображение</span>
+          <div class="advantages-item-card card-5">
+            <span>Доставка</span>
+            <a href="delivery.html">бесплатно</a>
+            <img class="advantages-item-image-5" src="img/icon-5.svg" alt="Фоновое изображение материалов">
+          </div>
         </li>
         <li>
           Дрели Соседям на радость!
           <a href="catalog.html">Открыть каталог</a>
-          <img src="img/Slide_1.jpg" alt="Дрели Соседям на радость!" width="620" height="266">
+          <img class="advantages-item-image" src="img/Slide_1.jpg" alt="Дрели Соседям на радость!" width="620" height="266">
         </li>
       </ul>
     </section>
@@ -293,7 +311,7 @@
       </p>
       <p>
         <label for="person-message">Текст письма:</label>
-        <textarea type="text" class="write-us-message" id="person-message" placeholder="В свободной форме"></textarea>
+        <textarea class="write-us-message" id="person-message" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn btn-write-us-submit" type="submit">Отправить</button>
       <button class="btn btn-close" type="button">Закрыть</button>
