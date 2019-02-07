@@ -126,8 +126,6 @@ body {
 
 .site-navigation {
   margin: 0;
-  /* padding-bottom: 20px; */
-  /* padding-top: 20px; */
   padding-left: 0;
   display: flex;
   justify-content: space-around;
@@ -170,7 +168,6 @@ body {
   position: absolute;
   top: 26px;
   left: 22px;
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -250,4 +247,127 @@ body {
   position: absolute;
   top: 32px;
   right: 31px;
+}
+
+.slider {
+  position: relative;
+  width: 620px;
+  height: 266px;
+}
+
+.advantages-item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-title {
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.slider-humorous-description {
+  position: absolute;
+  top: 65px;
+  left: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider a {
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  bottom: 22px;
+  left: 24px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(238, 54, 67);
+  text-transform: uppercase;
+  display: block;
+  width: 195px;
+  height: 26px;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 3px;
+}
+
+.slider a:hover,
+.slider a:focus {
+  background-color: rgb(202, 44, 55);
+}
+
+.slider a:active {
+  background-color: rgb(186, 39, 50);
+}
+
+.slider-btn-next-slide {
+  position: absolute;
+  top: 114px;
+  right: 20px;
+  background: none;
+  border: none;
+}
+
+.slider-btn-prev-slide {
+  position: absolute;
+  top: 114px;
+  left: 24px;
+  background: none;
+  border: none;
+}
+
+.popular-goods {
+  margin-top: 86px;
+}
+
+.popular-goods-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-goods-header h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(50, 66, 92);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.popular-goods-header a {
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 24px;
+  color: rgb(255, 255, 255);
+  display: block;
+  width: 253px;
+  height: 26px;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 3px;
+  background-color: rgb(238, 54, 67);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.popular-goods-list {
+  list-style: none;
+}
+
+.popular-goods-item {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  width: 220px;
+  height: 318px;
+  border: 1px solid rgb(234, 234, 234);
 }
