@@ -49,10 +49,11 @@ body {
 .main-header-top-menu a {
   color: rgb(255, 255, 255);
   display: inline-block;
-  height: 28px;
+  /* height: 28px; */
   width: 150px;
   text-align: center;
-  padding-top: 14px;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 .top-menu-logo {
@@ -71,6 +72,65 @@ body {
   width: 220px;
 }
 
+.top-menu-bookmark {
+  position: relative;
+}
+
+.top-menu-bookmark a::before {
+  content: "";
+  position: absolute;
+
+  top: 12px;
+  left: 10px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.top-menu-bookmark a:hover::before,
+.top-menu-bookmark a:focus::before {
+  opacity: 1;
+}
+
+.top-menu-bookmark a:active {
+  opacity: 0.3;
+}
+
+.top-menu-basket {
+  position: relative;
+}
+
+.top-menu-basket a::before {
+  content: "";
+  position: absolute;
+
+  top: 12px;
+  left: 10px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.top-menu-basket a:hover::before,
+.top-menu-basket a:focus::before {
+  opacity: 1;
+}
+
+.top-menu-basket a:active {
+  opacity: 0.3;
+}
 
 .main-header-top-menu p {
   margin: 0;
@@ -96,6 +156,7 @@ body {
 
 .main-header-authentication {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 940px;
   font-size: 21px;
@@ -105,7 +166,7 @@ body {
 }
 
 .main-authentication {
-  width: 300px;
+  width: 280px;
 }
 
 .main-title {
@@ -145,6 +206,26 @@ body {
   margin-bottom: 10px;
 }
 
+.site-address {
+  position: relative;
+}
+
+.site-address a::before {
+  content: "";
+  position: absolute;
+
+  top: 14px;
+  left: 10px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
 .advantages {
   margin-top: 60px;
 }
@@ -160,14 +241,59 @@ body {
 .site-authentication {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .main-authentication a {
   color: rgb(0, 0, 0);
   padding: 12px 25px;
   background-color: rgb(255, 255, 255);
+  display: block;
 }
+
+.site-authentication .site-login {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 45px;
+}
+
+.site-login::before {
+  content: "";
+  position: absolute;
+
+  top: 14px;
+  left: 15px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.site-login:hover::before,
+.site-login:focus::before {
+  opacity: 1;
+}
+
+.site-login:hover,
+.site-login:focus,
+.site-registration:hover,
+.site-registration:focus {
+  color: rgb(238, 54, 67);
+}
+
+.site-login:active,
+.site-registration:active {
+  color: rgb(0, 0, 0);
+  opacity: 0.3;
+}
+
 
 .main-navigation {
   width: 940px;
@@ -208,9 +334,17 @@ body {
   background-color: rgb(29, 39, 57);
 }
 
-.container {
+.centered {
   width: 940px;
   margin: 0 auto;
+}
+
+.background-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.background-grey {
+  background-color: rgb(243, 247, 249);
 }
 
 .container h1 {
@@ -256,6 +390,21 @@ body {
 
 .card-1 {
   background-color: rgb(255, 191, 71);
+}
+
+.card-1::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../img/new_flag.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 20;
 }
 
 .card-2 {
@@ -392,6 +541,10 @@ body {
   margin-top: 86px;
 }
 
+.popular-manufacturers {
+  margin-bottom: 70px;
+}
+
 .popular-goods-header,
 .popular-manufacturers-header {
   display: flex;
@@ -511,6 +664,63 @@ body {
   bottom: 21px;
 }
 
+.new-good {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  z-index: 20;
+  background: url("../img/new_flag.png") no-repeat 0 0;
+  z-index: 10;
+}
+
+.popular-goods-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.actions .buy,
+.actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: rgb(98, 166, 62);
+  border: 3px solid rgb(98, 166, 62);
+  border-bottom-color: rgb(54, 115, 21);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.actions .bookmark {
+  color: rgb(50, 66, 92);
+  background: rgb(255, 255, 255);
+  border-bottom-color: rgb(98, 166, 62);
+}
+
+.popular-goods-item .actions {
+  display: none;
+}
+
+.popular-goods-item:hover .actions,
+.popular-goods-item:focus .actions {
+  display: block;
+}
+
 .popular-manufacturers {
   margin-top: 54px;
 }
@@ -533,6 +743,10 @@ body {
 
 .popular-manufacturers-item a {
   margin: auto;
+}
+
+.popular-manufacturers-item:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
 }
 
 .main-footer p {
@@ -593,10 +807,6 @@ body {
   position: absolute;
   margin: 0;
   top: -5px;
-}
-
-.main-footer {
-  margin-top: 86px;
 }
 
 .bottom-line {
@@ -763,6 +973,17 @@ body {
   width: 140px;
 }
 
+.index-services {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.services {
+  /* background-color: rgb(243, 247, 249); */
+  margin-bottom: 80px;
+}
+
 .services h2 {
   text-transform: uppercase;
 }
@@ -775,11 +996,35 @@ body {
 
 .services-tagline {
   width: 400px;
+  padding-top: 70px;
   margin-bottom: 65px;
+}
+
+.services-tagline h2 {
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
 }
 
 .services-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.services-list::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 280px;
+
+  top: -40px;
+  right: 0;
+  background-image: url("../img/services-separator.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 10;
 }
 
 .btn-services {
@@ -789,7 +1034,7 @@ body {
   background-color: rgb(50, 66, 92);
   border: 1px solid rgb(41, 52, 73);
   margin-bottom: -1px;
-  width: 210px;
+  width: 240px;
   color: rgb(255, 255, 255);
   text-align: left;
   padding: 15px;
@@ -801,30 +1046,48 @@ body {
   color: rgb(50, 66, 92);
 }
 
+.services-name {
+  width: 240px;
+}
+
 .services-name-description {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: 36px;
   color: rgb(50, 66, 92);
+  text-transform: uppercase;
 }
 
 .services-description {
+  width: 620px;
+  position: relative;
+}
+
+.services-description p {
   width: 300px;
+}
+
+.services-description img {
+  position: absolute;
+  top: 25px;
+  right: 0;
 }
 
 .index-about-us {
   display: flex;
   justify-content: space-between;
-  /* align-items: baseline; */
+  margin-bottom: 86px;
 }
 
 .about-us {
-  width: 620px;
+  width: 540px;
 }
 
 .index-about-us h2 {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .index-about-us p {
@@ -860,7 +1123,7 @@ body {
 .contacts-map {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 300px;
 }
 
@@ -875,6 +1138,13 @@ body {
   color: rgb(255, 255, 255);
   border-radius: 3px;
   text-decoration: none;
+  margin-top: auto;
+}
+
+.contacts-map p {
+  margin: 0;
+  width: 220px;
+  margin-bottom: 20px;
 }
 
 .open-popup {
@@ -886,7 +1156,7 @@ body {
   width: 620px;
   height: 430px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 30px 50px 0 rgb(0, 0, 0);
+  box-shadow: 0 10px 50px 0 rgb(0, 0, 0);
 }
 
 .write-us {
@@ -1084,6 +1354,15 @@ fieldset p {
   padding: 9px 0;
 }
 
+.description {
+  padding-bottom: 76px;
+  padding-top: 65px;
+}
+
+.description p {
+  margin: 0;
+}
+
 .manufacturer-list {
   padding-left: 30px;
 }
@@ -1101,6 +1380,8 @@ fieldset p {
   height: 1px;
   content: url("../img/checkbox-off.svg");
 }
+
+
 
 .manufacturer-list li {
   padding: 13px 0;
