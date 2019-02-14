@@ -14,6 +14,10 @@ body {
   overflow: hidden;
 }
 
+.invisible {
+  display: none;
+}
+
 .width-viewboard {
   width: 940px;
   margin: 0 auto;
