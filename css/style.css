@@ -980,7 +980,7 @@ body {
 .index-services {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 100px;
+  padding-bottom: 105px;
 }
 
 .services {
@@ -1001,7 +1001,7 @@ body {
 .services-tagline {
   width: 400px;
   padding-top: 70px;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
 }
 
 .services-tagline h2 {
@@ -1074,6 +1074,14 @@ body {
   position: absolute;
   top: 25px;
   right: 0;
+}
+
+.services-description-guarantee img {
+  top: 0;
+}
+
+.services-description-credit img {
+  top: 0;
 }
 
 .index-about-us {
