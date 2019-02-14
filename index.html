@@ -262,17 +262,17 @@
             <h3 class="visually-hidden">Названия сервисов</h3>
             <ul class="services-list">
               <li>
-                <button class="btn btn-services btn-service-current" type="button">Доставка</button>
+                <button class="btn btn-services btn-service-current" id="btn-services-delivery" type="button">Доставка</button>
               </li>
               <li>
-                <button class="btn btn-services" type="button">Гарантия</button>
+                <button class="btn btn-services" id="btn-services-guarantee" type="button">Гарантия</button>
               </li>
               <li>
-                <button class="btn btn-services" type="button">Кредит</button>
+                <button class="btn btn-services" id="btn-services-credit" type="button">Кредит</button>
               </li>
             </ul>
           </section>
-          <section class="services-description services-description-delivery">
+          <section class="services-description services-description-delivery" data-services="btn-services-delivery">
               <span class="services-name-description">Доставка</span>
               <p>
                 Мы с удовольствием доставим ваш товар прямо
@@ -282,7 +282,7 @@
               </p>
               <img src="img/services-delivery.png" alt="Бибика доставки" width="468" height="261">
           </section>
-          <section class="services-description services-description-guarantee invisible">
+          <section class="services-description services-description-guarantee invisible" data-services="btn-services-guarantee">
               <span class="services-name-description">Гарантия</span>
               <p>
                 Если купленный у нас товар поломается или заискрит,
@@ -293,7 +293,7 @@
               </p>
               <img src="img/services-guarantee.png" alt="Эмблема сто процентной гарантии" width="389" height="283">
           </section>
-          <section class="services-description  services-description-credit invisible">
+          <section class="services-description services-description-credit invisible" data-services="btn-services-credit">
               <span class="services-name-description">Кредит</span>
               <p>
                 Залезть в долговую яму стало проще!
