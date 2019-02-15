@@ -517,6 +517,7 @@ body {
 }
 
 .slider a {
+  position: relative;
   font-size: 14px;
   line-height: 18px;
   position: absolute;
@@ -531,6 +532,7 @@ body {
   text-align: center;
   padding-top: 12px;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .slider a:hover,
@@ -540,6 +542,34 @@ body {
 
 .slider a:active {
   background-color: rgb(186, 39, 50);
+}
+
+.slider-point {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background-image: url("../img/slide-not-active.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-point-1 {
+  bottom: 38px;
+  right: 315px;
+}
+
+.slider-point-2 {
+  bottom: 38px;
+  right: 297px;
+}
+
+.slider-point-active {
+  background-image: url("../img/slide-active.jpg"), url("../img/slide-not-active.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%, 0 0;
 }
 
 .slider-btn-next-slide {
