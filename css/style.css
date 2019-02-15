@@ -1152,6 +1152,25 @@ body {
   top: 0;
 }
 
+.services-description-credit a {
+  width: 195px;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgb(238, 54, 67);
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-description-credit p {
+  margin: 22px 0;
+}
+
 .index-about-us {
   display: flex;
   justify-content: space-between;
