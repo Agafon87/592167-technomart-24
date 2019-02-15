@@ -626,6 +626,10 @@ body {
   margin-bottom: 20px;
 }
 
+.popular-goods-item:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
 .popular-goods-item h3 {
   margin: 0;
   font-size: 18px;
@@ -730,6 +734,55 @@ body {
   color: rgb(50, 66, 92);
   background: rgb(255, 255, 255);
   border-bottom-color: rgb(98, 166, 62);
+}
+
+.actions .buy {
+  position: relative;
+}
+
+.actions .buy::before {
+  content: "";
+  position: absolute;
+
+  top: 8px;
+  left: 10px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.actions .buy:hover::before,
+.actions .buy:focus::before,
+.actions .buy:active::before {
+  opacity: 1;
+}
+
+.actions .buy:hover,
+.actions .buy:focus {
+  background-color: rgb(95, 187, 45);
+  border-top-color: rgb(95, 187, 45);
+  border-left-color: rgb(95, 187, 45);
+  border-right-color: rgb(95, 187, 45);
+}
+
+.actions .buy:active {
+  background-color: rgb(81, 133, 52);
+  border: 3px solid rgb(81, 133, 52);
+}
+
+.actions .bookmark:hover,
+.actions .bookmark:focus {
+  border-color: rgb(50, 66, 92);
+}
+
+.actions .bookmark:focus {
+  opacity: 0.3;
 }
 
 .popular-goods-item .actions {
