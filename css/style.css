@@ -1226,14 +1226,31 @@ body {
 }
 
 .transport-companies {
-  list-style-image: url("../img/list-marker.png");
+  /* list-style-image: url("../img/list-marker.png"); */
+  list-style: none;
 }
 
 .transport-companies li {
+  position: relative;
   font-size: 18px;
   line-height: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.transport-companies li::before {
+  content: "";
+  position: absolute;
+
+  top: 25px;
+  left: -35px;
+
+  width: 25px;
+  height: 2px;
+
+  background-image: url("../img/list-marker.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .about-us a {
