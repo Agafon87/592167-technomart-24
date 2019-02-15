@@ -53,7 +53,6 @@ body {
 .main-header-top-menu a {
   color: rgb(255, 255, 255);
   display: inline-block;
-  /* height: 28px; */
   width: 150px;
   text-align: center;
   padding: 12px;
@@ -234,10 +233,29 @@ body {
   margin-top: 60px;
 }
 
+.index-advantages-first-line .advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-advantages-second-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-advantages-second-line .advantages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.index-advantages-second-line .card-4:first-child {
+  margin-bottom: 20px;
+}
+
 .advantages-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -364,7 +382,6 @@ body {
   position: relative;
   width: 300px;
   height: 123px;
-  border: 1px solid black;
   color: rgb(255, 255, 255);
 }
 
@@ -611,7 +628,6 @@ body {
 
 .popular-goods-item h3 {
   margin: 0;
-  /* padding: 0; */
   font-size: 18px;
   line-height: 20px;
   padding-left: 31px;
@@ -984,7 +1000,6 @@ body {
 }
 
 .services {
-  /* background-color: rgb(243, 247, 249); */
   margin-bottom: 80px;
 }
 
@@ -1135,7 +1150,6 @@ body {
 .contacts-map {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   width: 300px;
 }
 
@@ -1226,7 +1240,6 @@ body {
   width: 620px;
   height: 7px;
   background-color: rgb(238, 54, 67);
-  /* border: 1px solid red; */
 }
 
 .btn-close {
@@ -1269,11 +1282,6 @@ body {
   transform: rotate(-45deg) scale(0.73);
 }
 
-/* .breadcrumps a:hover,
-.breadcrumps a:focus,
-.breadcrumps a:active {
-  color: rgb(0, 0, 0);
-} */
 
 .breadcrumps-item-1 {
   background-image: url("../img/icon-home.svg");
@@ -1303,7 +1311,6 @@ body {
   background-color: rgb(247, 243, 236);
   text-transform: uppercase;
   border-radius: 3px;
-  /* font-family: "PT Sans", "Arial", sans-serif; */
   font-size: 13px;
   line-height: 18px;
   padding: 10px;
@@ -1323,7 +1330,6 @@ body {
 }
 
 .filter-title {
-  /* font-family: "PT Sans", "Arial", sans-serif; */
   font-size: 13px;
   line-height: 18px;
   background-color: rgb(247, 243, 236);
@@ -1335,7 +1341,6 @@ body {
 .filter fieldset {
   border: none;
   padding: 0;
-  /* border-bottom: 1px solid rgb(234, 234, 234); */
   padding-bottom: 20px;
 }
 
