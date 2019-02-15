@@ -70,46 +70,50 @@
   <main class="container">
     <div class="background-white centered">
       <section class="advantages">
-        <ul class="advantages-list">
-          <li>
-            <div class="advantages-item-card card-1">
-              <span>Материалы</span>
-              <a href="materials.html">на любой вкус</a>
-              <img class="advantages-item-image-1" src="img/icon-1.svg" alt="Фоновое изображение материалов">
-            </div>
-          </li>
-          <li>
-            <div class="advantages-item-card card-2">
-              <span>Инструмент</span>
-              <a href="instrument.html">на все случаи</a>
-              <img class="advantages-item-image-2" src="img/icon-2.svg" alt="Фоновое изображение материалов">
-            </div>
-          </li>
-          <li>
-            <div class="advantages-item-card card-3">
-              <span>Техника</span>
-              <a href="technicals.html">для стройки</a>
-              <img class="advantages-item-image-3" src="img/icon-3.svg" alt="Фоновое изображение материалов">
-            </div>
-          </li>
-          <li>
-            <div class="advantages-item-card card-4">
-              <span>Скидки 50%</span>
-              <a href="discount.html">на 350 товаров</a>
-              <img class="advantages-item-image-4" src="img/icon-4.svg" alt="Фоновое изображение материалов">
-            </div>
-          </li>
-          <li>
-            <div class="advantages-item-card card-5">
-              <span>Доставка</span>
-              <a href="delivery.html">бесплатно</a>
-              <img class="advantages-item-image-5" src="img/icon-5.svg" alt="Фоновое изображение материалов">
-            </div>
-          </li>
-          <li>
+        <div class="index-advantages-first-line">
+          <ul class="advantages-list">
+            <li>
+              <div class="advantages-item-card card-1">
+                <span>Материалы</span>
+                <a href="materials.html">на любой вкус</a>
+                <img class="advantages-item-image-1" src="img/icon-1.svg" alt="Фоновое изображение материалов">
+              </div>
+            </li>
+            <li>
+              <div class="advantages-item-card card-2">
+                <span>Инструмент</span>
+                <a href="instrument.html">на все случаи</a>
+                <img class="advantages-item-image-2" src="img/icon-2.svg" alt="Фоновое изображение материалов">
+              </div>
+            </li>
+            <li>
+              <div class="advantages-item-card card-3">
+                <span>Техника</span>
+                <a href="technicals.html">для стройки</a>
+                <img class="advantages-item-image-3" src="img/icon-3.svg" alt="Фоновое изображение материалов">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="index-advantages-second-line">
+          <div>
             <div class="slider">
-              <img class="advantages-item-image" src="img/Slide_1.jpg" alt="Дрели Соседям на радость!" width="620" height="266">
-              <span class="slider-title">Дрели</span><br>
+              <img class="advantages-item-image" src="img/Slide_2.jpg" alt="Перфораторы настоящие мужские игрушки" width="620" height="266">
+              <span class="slider-title">Перфораторы 1</span><br>
+              <span class="slider-humorous-description">Настоящие мужские игрушки</span>
+              <button class="slider-btn-prev-slide" type="button">
+                <img src="img/icon-left.svg" alt="Показывает предыдущее изображение в слайдере">
+              </button>
+              <button class="slider-btn-next-slide" type="button">
+                <img src="img/icon-right.svg" alt="Показывает следующее изображение в слайдере">
+              </button>
+              <a href="catalog.html">Открыть каталог</a>
+              <div class="slider-point slider-point-1 slider-point-active"></div>
+              <div class="slider-point slider-point-2"></div>
+            </div>
+            <div class="slider invisible">
+              <img class="advantages-item-image" src="img/Slide_1.jpg" alt="Дрели соседям на радость!" width="620" height="266">
+              <span class="slider-title">Дрели 2</span><br>
               <span class="slider-humorous-description">Соседям на радость!</span>
               <button class="slider-btn-prev-slide" type="button">
                 <img src="img/icon-left.svg" alt="Показывает предыдущее изображение в слайдере">
@@ -118,9 +122,29 @@
                 <img src="img/icon-right.svg" alt="Показывает следующее изображение в слайдере">
               </button>
               <a href="catalog.html">Открыть каталог</a>
+              <div class="slider-point slider-point-1"></div>
+              <div class="slider-point slider-point-2 slider-point-active"></div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div>
+            <ul class="advantages-list">
+              <li>
+                <div class="advantages-item-card card-4">
+                  <span>Скидки 50%</span>
+                  <a href="discount.html">на 350 товаров</a>
+                  <img class="advantages-item-image-4" src="img/icon-4.svg" alt="Фоновое изображение материалов">
+                </div>
+              </li>
+              <li>
+                <div class="advantages-item-card card-5">
+                  <span>Доставка</span>
+                  <a href="delivery.html">бесплатно</a>
+                  <img class="advantages-item-image-5" src="img/icon-5.svg" alt="Фоновое изображение материалов">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="popular-goods">
         <div class="popular-goods-header">
@@ -130,6 +154,10 @@
         <ul class="popular-goods-list">
           <li>
             <div class="popular-goods-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <img src="img/BOSCH_BFG_9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
               <h3 class="popular-goods-price">Перфоратор BOSCH BFG 9000</h3>
               <p class="old-price">32500 Р.</p>
@@ -138,6 +166,10 @@
           </li>
           <li>
             <div class="popular-goods-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <img src="img/BOSCH_BFG_3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
               <h3 class="popular-goods-price">Перфоратор BOSCH BFG 3000</h3>
               <p class="old-price">22500 Р.</p>
@@ -146,6 +178,10 @@
           </li>
           <li>
             <div class="popular-goods-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <img src="img/BOSCH_BFG_6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
               <h3 class="popular-goods-price">Перфоратор BOSCH BFG 6000</h3>
               <p class="old-price">30500 Р.</p>
@@ -154,6 +190,10 @@
           </li>
           <li>
             <div class="popular-goods-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="new-good"><span class="visually-hidden">новинка</span></div>
               <img src="img/BOSCH_BFG_2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
               <h3 class="popular-goods-price">Перфоратор BOSCH BFG 2000</h3>
@@ -170,68 +210,68 @@
         </div>
         <ul class="manufacturers-list">
           <li>
-            <div class="popular-manufacturers-item">
+            <a href="catalog.html/bosch">
+              <div class="popular-manufacturers-item">
               <h3 class="visually-hidden">bosch</h3>
-              <a href="catalog.html/bosch">
                 <img src="img/bosch-logo.png" alt="товары фирмы bosch" width="126" height="37">
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="popular-manufacturers-item">
-              <h3 class="visually-hidden">Makita</h3>
-              <a href="catalog.html/makita">
-                <img src="img/Makita-logo.png" alt="товары фирмы Makita" width="123" height="40">
-              </a>
-            </div>
+            <a href="catalog.html/makita">
+              <div class="popular-manufacturers-item">
+                <h3 class="visually-hidden">Makita</h3>
+                  <img src="img/Makita-logo.png" alt="товары фирмы Makita" width="123" height="40">
+              </div>
+            </a>
           </li>
           <li>
-            <div class="popular-manufacturers-item">
+            <a href="catalog.html/DeWALT">
+              <div class="popular-manufacturers-item">
               <h3 class="visually-hidden">DeWALT</h3>
-              <a href="catalog.html/DeWALT">
                 <img src="img/DeWALT-logo.png" alt="товары фирмы DeWALT" width="146" height="44">
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="popular-manufacturers-item">
+            <a href="catalog.html/interskol">
+              <div class="popular-manufacturers-item">
               <h3 class="visually-hidden">Интерскол</h3>
-              <a href="catalog.html/interskol">
                 <img src="img/interskol-logo.png" alt="товары фирмы Интерскол" width="200" height="88">
-              </a>
-            </di>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="popular-manufacturers-item">
+            <a href="catalog.html/Hitachi">
+              <div class="popular-manufacturers-item">
               <h3 class="visually-hidden">Hitachi</h3>
-              <a href="catalog.html/Hitachi">
                 <img src="img/Hitachi-logo.png" alt="товары фирмы Hitachi" width="169" height="31">
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="popular-manufacturers-item">
+            <a href="catalog.html/LG">
+              <div class="popular-manufacturers-item">
               <h3 class="visually-hidden">LG</h3>
-              <a href="catalog.html/LG">
                 <img src="img/LG-logo.png" alt="товары фирмы LG" width="121" height="73">
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="popular-manufacturers-item">
+            <a href="catalog.html/AEG">
+              <div class="popular-manufacturers-item">
               <h3 class="visually-hidden">AEG</h3>
-              <a href="catalog.html/AEG">
                 <img src="img/AEG-logo.png" alt="товары фирмы AEG" width="151" height="96">
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="popular-manufacturers-item">
+            <a href="catalog.html/Metabo">
+              <div class="popular-manufacturers-item">
               <h3 class="visually-hidden">Metabo</h3>
-              <a href="catalog.html/Metabo">
                 <img src="img/Metabo-logo.png" alt="товары фирмы Metabo" width="204" height="69">
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
         </ul>
       </section>
@@ -250,17 +290,17 @@
             <h3 class="visually-hidden">Названия сервисов</h3>
             <ul class="services-list">
               <li>
-                <button class="btn btn-services btn-service-current" type="button">Доставка</button>
+                <button class="btn btn-services btn-service-current" id="btn-services-delivery" type="button">Доставка</button>
               </li>
               <li>
-                <button class="btn btn-services" type="button">Гарантия</button>
+                <button class="btn btn-services" id="btn-services-guarantee" type="button">Гарантия</button>
               </li>
               <li>
-                <button class="btn btn-services" type="button">Кредит</button>
+                <button class="btn btn-services" id="btn-services-credit" type="button">Кредит</button>
               </li>
             </ul>
           </section>
-          <section class="services-description">
+          <section class="services-description services-description-delivery" data-services="btn-services-delivery">
               <span class="services-name-description">Доставка</span>
               <p>
                 Мы с удовольствием доставим ваш товар прямо
@@ -268,7 +308,27 @@
                 Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!
               </p>
-              <img src="img/Layer 131.png" alt="Бибика доставки" width="468" height="261">
+              <img src="img/services-delivery.png" alt="Бибика доставки" width="468" height="261">
+          </section>
+          <section class="services-description services-description-guarantee invisible" data-services="btn-services-guarantee">
+              <span class="services-name-description">Гарантия</span>
+              <p>
+                Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.
+              </p>
+              <img src="img/services-guarantee.png" alt="Эмблема сто процентной гарантии" width="389" height="283">
+          </section>
+          <section class="services-description services-description-credit invisible" data-services="btn-services-credit">
+              <span class="services-name-description">Кредит</span>
+              <p>
+                Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a href="#">Отправить заявку</a>
+              <img src="img/services-credit.png" alt="Предоставляем возможность оформить кредит" width="465" height="285">
           </section>
         </div>
       </section>
@@ -381,16 +441,16 @@
     <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
       <div class="person-data">
         <p>
-          <label for="person-name">Ваше имя:</label>
+          <label>Ваше имя:</label>
           <input class="write-us-person-name" type="text" name="person-name" id="modal-person-name" placeholder="Имя Фамилия" aria-label="Укажите ваше имя и фамилию">
         </p>
         <p>
-          <label for="person-email">Ваш e-mail:</label>
+          <label>Ваш e-mail:</label>
           <input class="write-us-person-email" type="text" name="person-email" id="modal-person-email" placeholder="email@example.com" aria-label="Укажите вашу электронную почту">
         </p>
       </div>
       <p class="write-us-message">
-        <label for="person-message">Текст письма:</label>
+        <label>Текст письма:</label>
         <textarea name="person-message" id="modal-person-message" placeholder="В свободной форме" aria-label="В свободной форме оставьте свое обращение"></textarea>
       </p>
       <button class="btn btn-write-us-submit" type="submit">Отправить</button>
