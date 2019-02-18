@@ -589,7 +589,7 @@ body {
 }
 
 .popular-goods {
-  margin-top: 86px;
+  margin-top: 53px;
 }
 
 .popular-manufacturers {
@@ -601,7 +601,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 46px;
+  margin-bottom: 21px;
+  background-color: rgb(249, 245, 240);
+  padding: 24px;
 }
 
 .popular-goods-header h2,
@@ -612,14 +614,14 @@ body {
   color: rgb(50, 66, 92);
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .popular-goods-header a,
 .popular-manufacturers-header a {
   font-size: 14px;
   line-height: 18px;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   color: rgb(255, 255, 255);
   display: block;
   width: 253px;
@@ -631,6 +633,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/* .popular-goods-header {
+  background-color: rgb(249, 245, 240);
+} */
 
 .popular-goods-list {
   padding: 0;
