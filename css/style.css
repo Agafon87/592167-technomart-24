@@ -1332,6 +1332,7 @@ body {
   line-height: 18px;
   width: 200px;
   padding: 8px;
+  margin-top: 13px;
 }
 
 .person-data label,
@@ -1339,7 +1340,7 @@ body {
   display: block;
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 13px;
+  /* margin-bottom: 13px; */
 }
 
 .write-us-message textarea {
@@ -1348,6 +1349,7 @@ body {
   resize: none;
   padding: 10px;
   margin-bottom: 74px;
+  margin-top: 13px;
 }
 
 .btn-write-us-submit {
