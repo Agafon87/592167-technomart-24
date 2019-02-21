@@ -1629,14 +1629,12 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  /* width: 450px; */
   margin: 0;
   padding: 0;
 }
 
 .width-for-sorting {
   width: 360px;
-  /* padding-right: 20px; */
 }
 
 .sort-type {
@@ -1645,16 +1643,32 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.current-sort-type {
+.sort-type:hover,
+.sort-type:focus {
+  color: rgb(0, 0, 0);
+}
+
+.current-sort-type,
+.current-sort-type:hover,
+.current-sort-type:focus {
   border-bottom: none;
   color: rgb(238, 54, 67);
 }
 
-/* .sorting-types-max-grow {
-  flex-grow: 1;
-  border: 1px solid red;
-  text-align: center;
-} */
+.icon-dir:hover,
+.icon-dir:focus {
+  fill: rgb(0, 0, 0);
+}
+
+.icon-dir {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.current-icon-dir,
+.current-icon-dir:hover,
+.current-icon-dir:focus {
+  fill: rgb(238, 54, 67);
+}
 
 .sorting-types-dir {
   padding-left: 10px;

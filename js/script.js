@@ -58,14 +58,12 @@ const makeAllSlidesInvisible = () => {
 
 const changeFillIconDir = () => {
   for (const i of dirIcons) {
-    i.style.fill = "black";
-    i.style.opacity = 0.3;
+    i.classList.remove(`current-icon-dir`);
   }
 }
 
 const changeFillCurrentDir = (iconDir) => {
-  iconDir.style.fill = "red";
-  iconDir.style.opacity = 1;
+  iconDir.classList.add(`current-icon-dir`);
 }
 
 const removeClassFromSortType = () => {
