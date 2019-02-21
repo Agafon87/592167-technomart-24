@@ -1435,7 +1435,7 @@ body {
 }
 
 .btn-close {
-  background-color: white;
+  background-color: transparent;
   border: none;
   width: 21px;
   height: 21px;
