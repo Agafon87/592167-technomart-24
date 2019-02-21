@@ -14,6 +14,9 @@ const searchInput = document.querySelector(`#search`);
 const searchParagraph = document.querySelector(`.top-menu-search`);
 const dirIcons = document.querySelectorAll(`.icon-dir`);
 const sortTypes = document.querySelectorAll(`.sort-type`);
+const banner = document.querySelector(`.banner`);
+const buyButtons = document.querySelectorAll(`.buy`);
+const btnBannerClose = document.querySelector(`.banner-close`);
 
 
 // Функции
@@ -146,6 +149,21 @@ for (const sortType of sortTypes) {
     evt.preventDefault();
     removeClassFromSortType();
     setCurrentClassInSortType(sortType);
+  });
+}
+
+for (const buyBtn of buyButtons) {
+  buyBtn.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
+    banner.classList.add(`open-popup`);
+    banner.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
+    banner.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
+  });
+}
+
+if (btnBannerClose) {
+  btnBannerClose.addEventListener(`click`, () => {
+    banner.classList.remove(`open-popup`);
   });
 }
 
