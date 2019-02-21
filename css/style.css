@@ -1330,6 +1330,7 @@ body {
 }
 
 .contacts-map {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -1369,10 +1370,12 @@ body {
 
 .modal-map {
   position: absolute;
+  left: -643px;
+  top: -54px;
   width: 940px;
   height: 446px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 10px 50px 0 rgb(0, 0, 0);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .write-us {

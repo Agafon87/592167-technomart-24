@@ -3,7 +3,8 @@ const formWriteUs = document.querySelector(`.modal-write-us`);
 const modalMap = document.querySelector(`.modal-map`);
 const openWriteUsPopup = document.querySelector(`.open-write-us-popup`);
 const openMap = document.querySelector(`.contacts-map img`);
-const closeWriteUsPopup = document.querySelector(`.btn-close`);
+const closeWriteUsPopup = document.querySelector(`.write-us-close`);
+const closeMap = document.querySelector(`.map-close`);
 const buttonServices = document.querySelectorAll(`.btn-services`);
 const servicesDescription = document.querySelectorAll(`.services-description`);
 const advantagesSlider = [...document.querySelectorAll(`.slider`)];
@@ -62,14 +63,18 @@ if (openWriteUsPopup) {
 if(openMap) {
   openMap.addEventListener(`click`, () => {
     modalMap.classList.add(`open-popup`);
-    modalMap.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
-    modalMap.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
   });
 }
 
 if (closeWriteUsPopup){
   closeWriteUsPopup.addEventListener(`click`, () => {
     formWriteUs.classList.remove(`open-popup`);
+  });
+}
+
+if (closeMap){
+  closeMap.addEventListener(`click`, () => {
+    modalMap.classList.remove(`open-popup`);
   });
 }
 
