@@ -1,12 +1,18 @@
+// Переменные
 const formWriteUs = document.querySelector(`.modal-write-us`);
+const modalMap = document.querySelector(`.modal-map`);
 const openWriteUsPopup = document.querySelector(`.open-write-us-popup`);
+const openMap = document.querySelector(`.contacts-map img`);
 const closeWriteUsPopup = document.querySelector(`.btn-close`);
 const buttonServices = document.querySelectorAll(`.btn-services`);
 const servicesDescription = document.querySelectorAll(`.services-description`);
 const advantagesSlider = [...document.querySelectorAll(`.slider`)];
 const sliderButtonsPrev = document.querySelectorAll(`.slider-btn-prev-slide`);
 const sliderButtonsNext = document.querySelectorAll(`.slider-btn-next-slide`);
+const searchInput = document.querySelector(`#search`);
+const searchParagraph = document.querySelector(`.top-menu-search`);
 
+// Функции
 const changeServicesDescription = (servicesButton) => {
 
   for (const i of servicesDescription) {
@@ -43,11 +49,18 @@ const makeAllSlidesInvisible = () => {
   }
 }
 
+// Обработчики событий
 openWriteUsPopup.addEventListener(`click`, (evt) => {
   evt.preventDefault();
   formWriteUs.classList.add(`open-popup`);
   formWriteUs.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
   formWriteUs.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
+});
+
+openMap.addEventListener(`click`, () => {
+  modalMap.classList.add(`open-popup`);
+  modalMap.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
+  modalMap.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
 });
 
 closeWriteUsPopup.addEventListener(`click`, () => {
@@ -83,3 +96,11 @@ for (const sliderBtnPrev of sliderButtonsPrev) {
     advantagesSlider[numberSlide].classList.remove(`invisible`);
   })
 }
+
+searchInput.addEventListener(`focus`, () => {
+  searchParagraph.classList.add(`input-focus`);
+});
+
+searchInput.addEventListener(`blur`, () => {
+  searchParagraph.classList.remove(`input-focus`);
+});
