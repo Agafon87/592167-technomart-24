@@ -12,6 +12,9 @@ const sliderButtonsPrev = document.querySelectorAll(`.slider-btn-prev-slide`);
 const sliderButtonsNext = document.querySelectorAll(`.slider-btn-next-slide`);
 const searchInput = document.querySelector(`#search`);
 const searchParagraph = document.querySelector(`.top-menu-search`);
+const dirIcons = document.querySelectorAll(`.icon-dir`);
+const sortTypes = document.querySelectorAll(`.sort-type`);
+
 
 // Функции
 const changeServicesDescription = (servicesButton) => {
@@ -48,6 +51,28 @@ const makeAllSlidesInvisible = () => {
   for (const slide of advantagesSlider) {
     slide.classList.add(`invisible`);
   }
+}
+
+const changeFillIconDir = () => {
+  for (const i of dirIcons) {
+    i.style.fill = "black";
+    i.style.opacity = 0.3;
+  }
+}
+
+const changeFillCurrentDir = (iconDir) => {
+  iconDir.style.fill = "red";
+  iconDir.style.opacity = 1;
+}
+
+const removeClassFromSortType = () => {
+  for (const it of sortTypes) {
+    it.classList.remove(`current-sort-type`);
+  }
+}
+
+const setCurrentClassInSortType = (sortType) => {
+  sortType.classList.add(`current-sort-type`);
 }
 
 // Обработчики событий
@@ -106,6 +131,22 @@ for (const sliderBtnPrev of sliderButtonsPrev) {
     }
     advantagesSlider[numberSlide].classList.remove(`invisible`);
   })
+}
+
+for (const iconDir of dirIcons) {
+  iconDir.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
+    changeFillIconDir();
+    changeFillCurrentDir(iconDir);
+  });
+}
+
+for (const sortType of sortTypes) {
+  sortType.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
+    removeClassFromSortType();
+    setCurrentClassInSortType(sortType);
+  });
 }
 
 searchInput.addEventListener(`focus`, () => {

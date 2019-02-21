@@ -152,12 +152,35 @@
           <h2 class="visually-hidden">Сортировка товаров</h2>
           <div class="sort-flex">
             <p>Сортировка:</p>
-            <ul class="sorting-types">
-              <li><a href="">по цене</a></li>
-              <li><a href="">по типу</a></li>
-              <li><a href="">по функционалу</a></li>
-              <li><a href="">по возрастанию/убыванию</a></li>
-            </ul>
+            <div class="catalog-sort-flex">
+              <div>
+                <ul class="sorting-types width-for-sorting">
+                  <li><a class="sort-type current-sort-type" href="">по цене</a></li>
+                  <li><a class="sort-type" href="">по типу</a></li>
+                  <li><a class="sort-type" href="">по функционалу</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul class="sorting-types">
+                  <li class="sorting-types-dir">
+                    <a class="" href="">
+                      <svg class="icon-dir icon-up-dir" fill="rgb(238, 54, 67)" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                         <polygon points="5.5,0 0,10 11,10 "/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sorting-types-dir">
+                    <a href="">
+                        <svg class="icon-dir icon-down-dir" fill="rgba(0, 0, 0, 0.3)" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                          <polyline points="5.5,10 0,0 11,0 "/>
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <h2 class="visually-hidden">Список товаров</h2>
