@@ -1205,6 +1205,11 @@ body {
   padding: 15px;
 }
 
+.btn-services:hover {
+  background-color: rgb(41, 52, 73);
+  color: rgb(255, 255, 255);
+}
+
 .btn-service-current {
   background-color: rgb(255, 255, 255);
   border: none;
