@@ -50,22 +50,28 @@ const makeAllSlidesInvisible = () => {
 }
 
 // Обработчики событий
-openWriteUsPopup.addEventListener(`click`, (evt) => {
-  evt.preventDefault();
-  formWriteUs.classList.add(`open-popup`);
-  formWriteUs.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
-  formWriteUs.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
-});
+if (openWriteUsPopup) {
+  openWriteUsPopup.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
+    formWriteUs.classList.add(`open-popup`);
+    formWriteUs.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
+    formWriteUs.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
+  });
+}
 
-openMap.addEventListener(`click`, () => {
-  modalMap.classList.add(`open-popup`);
-  modalMap.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
-  modalMap.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
-});
+if(openMap) {
+  openMap.addEventListener(`click`, () => {
+    modalMap.classList.add(`open-popup`);
+    modalMap.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
+    modalMap.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
+  });
+}
 
-closeWriteUsPopup.addEventListener(`click`, () => {
-  formWriteUs.classList.remove(`open-popup`);
-});
+if (closeWriteUsPopup){
+  closeWriteUsPopup.addEventListener(`click`, () => {
+    formWriteUs.classList.remove(`open-popup`);
+  });
+}
 
 for (const i of buttonServices) {
   i.addEventListener(`click`, (evt) => {
