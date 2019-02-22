@@ -17,6 +17,7 @@ const sortTypes = document.querySelectorAll(`.sort-type`);
 const banner = document.querySelector(`.banner`);
 const buyButtons = document.querySelectorAll(`.buy`);
 const btnBannerClose = document.querySelector(`.banner-close`);
+let paginationButtons = [...document.querySelectorAll(`.pagination-item`)];
 
 
 // Функции
@@ -39,15 +40,22 @@ const changeServicesDescription = (servicesButton) => {
   })[0].classList.add(`btn-service-current`);
 }
 
-const getIndexElementInArray = (arr) => {
-  let numberSlide = 0;
-  for (const i of arr) {
-    if (!i.classList.contains(`invisible`)) {
-      return arr.indexOf(i);
+const getIndexElementInArray = (arr, className, availability) => {
+  if (availability) {
+    for (const i of arr) {
+      if (i.classList.contains(className)) {
+        return arr.indexOf(i);
+      }
+    }
+  } else {
+    for (const i of arr) {
+      if (!i.classList.contains(className)) {
+        return arr.indexOf(i);
+      }
     }
   }
 
-  return numberSlide;
+  return 0;
 }
 
 const makeAllSlidesInvisible = () => {
@@ -74,6 +82,26 @@ const removeClassFromSortType = () => {
 
 const setCurrentClassInSortType = (sortType) => {
   sortType.classList.add(`current-sort-type`);
+}
+
+const removeClassFromPagination = () => {
+  for (const btnPagination of paginationButtons) {
+    btnPagination.classList.remove(`pagination-current`);
+  }
+}
+
+const setClassForPagination = (btnPagination) => {
+  btnPagination.classList.add(`pagination-current`);
+}
+
+const getNextPagination = () => {
+  paginationButtons = [...document.querySelectorAll(`.pagination-item`)];
+  let elementNumber = getIndexElementInArray(paginationButtons, `pagination-current`, true);
+  elementNumber++;
+  if (elementNumber < paginationButtons.length - 1) {
+    removeClassFromPagination();
+    paginationButtons[elementNumber].classList.add(`pagination-current`);
+  }
 }
 
 // Обработчики событий
@@ -112,25 +140,27 @@ for (const i of buttonServices) {
 
 for (const sliderBtnNext of sliderButtonsNext) {
   sliderBtnNext.addEventListener(`click`, (evt) => {
-    let numberSlide = getIndexElementInArray(advantagesSlider);
+    let numberSlide = getIndexElementInArray(advantagesSlider, `invisible`, false);
     makeAllSlidesInvisible();
     numberSlide++;
     if ((numberSlide) >= advantagesSlider.length) {
       advantagesSlider[0].classList.remove(`invisible`);
+    } else {
+      advantagesSlider[numberSlide].classList.remove(`invisible`);
     }
-    advantagesSlider[numberSlide].classList.remove(`invisible`);
   });
 }
 
 for (const sliderBtnPrev of sliderButtonsPrev) {
   sliderBtnPrev.addEventListener(`click`, (evt) => {
-    let numberSlide = getIndexElementInArray(advantagesSlider);
+    let numberSlide = getIndexElementInArray(advantagesSlider, `invisible`, false);
     makeAllSlidesInvisible();
     numberSlide--;
     if ((numberSlide) < 0) {
       advantagesSlider[advantagesSlider.length - 1].classList.remove(`invisible`);
+    } else {
+      advantagesSlider[numberSlide].classList.remove(`invisible`);
     }
-    advantagesSlider[numberSlide].classList.remove(`invisible`);
   })
 }
 
@@ -162,6 +192,18 @@ for (const buyBtn of buyButtons) {
 if (btnBannerClose) {
   btnBannerClose.addEventListener(`click`, () => {
     banner.classList.remove(`open-popup`);
+  });
+}
+
+for (const btnPagination of paginationButtons) {
+  btnPagination.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
+    if (btnPagination.classList.contains(`pagination-next`)) {
+      getNextPagination();
+    } else {
+      removeClassFromPagination();
+      setClassForPagination(btnPagination);
+    }
   });
 }
 
