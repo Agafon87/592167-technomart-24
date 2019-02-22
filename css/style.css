@@ -1520,6 +1520,8 @@ body {
   width: 200px;
   padding: 8px;
   margin-top: 13px;
+  border: 2px solid rgb(215, 220, 222);
+  border-radius: 3px;
 }
 
 .person-data label,
@@ -1537,6 +1539,18 @@ body {
   padding: 10px;
   margin-bottom: 74px;
   margin-top: 13px;
+  border: 2px solid rgb(215, 220, 222);
+  border-radius: 3px;
+}
+
+.person-data input:hover,
+.write-us-message textarea:hover {
+  border-color: rgb(181, 181, 181);
+}
+
+.person-data input:focus,
+.write-us-message textarea:focus {
+  border-color: rgb(238, 54, 67);
 }
 
 .btn-write-us-submit {
