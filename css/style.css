@@ -811,6 +811,12 @@ body {
   font-weight: 700;
   position: relative;
   margin-bottom: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.popular-goods-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .popular-goods-item:hover {
@@ -857,8 +863,8 @@ body {
   border-bottom-color: transparent;
   border-left-color: transparent;
   position: absolute;
-  right: 39px;
-  bottom: 39px;
+  right: 38px;
+  bottom: 40px;
 }
 
 .popular-goods-item::before {
@@ -871,8 +877,8 @@ body {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: transparent;
   position: absolute;
-  right: 39px;
-  bottom: 21px;
+  right: 38px;
+  bottom: 20px;
 }
 
 .new-good {
@@ -1196,41 +1202,55 @@ body {
 .catalog-list {
   padding: 0;
   list-style: none;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
+
+
 
 .pagination-list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
-  display: flex;
-  width: 38px;
-  height: 38px;
+  display: block;
+  padding: 9px 14px;
   text-transform: uppercase;
-  border: 1px solid rgb(229, 229, 229);
-  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   margin-right: 10px;
-}
-
-.pagination-item a {
   text-decoration: none;
-  margin: auto;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 3px;
 }
 
-.pagination-current {
+.pagination-item:hover,
+.pagination-item:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.pagination-item:active {
+  border: 1px solid rgb(238, 54, 67);
+  color: rgb(0, 0, 0);
+}
+
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   background-color: rgb(238, 54, 67);
-}
-
-.pagination-current a {
   color: rgb(255, 255, 255);
+  border: 1px solid rgb(238, 54, 67);
 }
 
-.pagination-item:last-child {
+.pagination-next {
   width: 140px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .index-services {
@@ -1753,8 +1773,17 @@ fieldset p {
   padding-top: 65px;
 }
 
+.description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 .description p {
   margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .manufacturer-list {
