@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Cuprum", "Arial", sans-serif;
+  min-width: 960px;
 }
 
 .visually-hidden {
