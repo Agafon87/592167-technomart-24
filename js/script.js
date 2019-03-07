@@ -18,6 +18,12 @@ const banner = document.querySelector(`.banner`);
 const buyButtons = document.querySelectorAll(`.buy`);
 const btnBannerClose = document.querySelector(`.banner-close`);
 let paginationButtons = [...document.querySelectorAll(`.pagination-item`)];
+const basket = document.querySelector(`.top-menu-basket`);
+const bookmark = document.querySelector(`.top-menu-bookmark`);
+const bookmarkButtons = document.querySelectorAll(`.bookmark`);
+const buttonContinueShopping = document.querySelector(`.btn-continue-shopping`);
+let basketEnumerator = 0;
+let bookmarkEnumerator = 0;
 
 
 // Функции
@@ -109,7 +115,7 @@ if (openWriteUsPopup) {
   openWriteUsPopup.addEventListener(`click`, (evt) => {
     evt.preventDefault();
     formWriteUs.classList.add(`open-popup`);
-    formWriteUs.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
+    formWriteUs.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 215) + `px`;
     formWriteUs.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
   });
 }
@@ -117,6 +123,8 @@ if (openWriteUsPopup) {
 if(openMap) {
   openMap.addEventListener(`click`, () => {
     modalMap.classList.add(`open-popup`);
+    modalMap.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 225) + `px`;
+    modalMap.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 470) + `px`;
   });
 }
 
@@ -183,9 +191,19 @@ for (const sortType of sortTypes) {
 for (const buyBtn of buyButtons) {
   buyBtn.addEventListener(`click`, (evt) => {
     evt.preventDefault();
+    basket.classList.add(`not-empty`);
     banner.classList.add(`open-popup`);
     banner.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 200) + `px`;
     banner.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 310) + `px`;
+    basket.children[0].textContent = `Корзина: ${++basketEnumerator}`;
+  });
+}
+
+for (const bookmarkBtn of bookmarkButtons) {
+  bookmarkBtn.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
+    bookmark.classList.add(`not-empty`);
+    bookmark.children[0].textContent = `Закладки: ${++bookmarkEnumerator}`;
   });
 }
 
@@ -213,4 +231,8 @@ searchInput.addEventListener(`focus`, () => {
 
 searchInput.addEventListener(`blur`, () => {
   searchParagraph.classList.remove(`input-focus`);
+});
+
+buttonContinueShopping.addEventListener(`click`, () => {
+  btnBannerClose.click();
 });
