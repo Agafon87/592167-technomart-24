@@ -1129,13 +1129,13 @@ body {
 
 .popular-goods-item::after {
   position: absolute;
-  right: 35px;
-  bottom: 38px;
+  right: 33px;
+  bottom: 34px;
 
   width: 0;
   height: 0;
 
-  border: 10px solid #ff44ee;
+  border: 12px solid #ff44ee;
   border-top-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-bottom-color: transparent;
@@ -1146,16 +1146,15 @@ body {
 
 .popular-goods-item::before {
   position: absolute;
-  right: 35px;
+  right: 33px;
   bottom: 20px;
 
   width: 0;
   height: 0;
 
-  border: 10px solid #ff44ee;
+  border: 12px solid #ff44ee;
   border-top-color: transparent;
-  border-right-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);; border-bottom-color: rgb(255, 255, 255);
   border-left-color: transparent;
 
   content: "";
