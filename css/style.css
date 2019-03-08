@@ -2266,6 +2266,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -2511,7 +2512,7 @@ body {
   content: url("../img/radio-off-peace.svg");
 }
 
-.filter-radio:hover ~ label::before {
+.filter-radio ~ label:hover::before {
   content: url("../img/radio-off-hover.svg");
 }
 
