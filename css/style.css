@@ -2023,8 +2023,15 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 80px;
-  padding-right: 80px;
+}
+
+.write-us-main {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.write-us-main p {
+  margin: 0;
 }
 
 .person-data {
@@ -2034,6 +2041,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 22px;
 }
 
 .person-data p {
@@ -2084,7 +2093,11 @@ body {
 }
 
 .btn-write-us-submit {
+  margin-left: 80px;
+  margin-top: 37px;
   padding: 9px;
+  width: 460px;
+  height: 38px;
 
   font-size: 14px;
   line-height: 18px;
@@ -2094,6 +2107,11 @@ body {
   border-radius: 3px;
   border: none;
   text-transform: uppercase;
+}
+
+.write-us-footer {
+  min-height: 112px;
+  background-color: rgb(244, 244, 244);
 }
 
 .modal-header {
