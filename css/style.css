@@ -1920,7 +1920,26 @@ body {
   width: 300px;
 }
 
-.contacts-map a {
+/* .contacts-map a {
+  display: block;
+  width: 300px;
+  padding: 11px 4px 9px 10px;
+  margin-top: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+
+  text-transform: uppercase;
+  background-color: rgb(238, 54, 67);
+  border-radius: 3px;
+  text-decoration: none;
+} */
+
+.open-write-us-popup {
   display: block;
   width: 300px;
   padding: 11px 4px 9px 10px;
@@ -1939,12 +1958,12 @@ body {
   text-decoration: none;
 }
 
-.contacts-map a:hover,
-.contacts-map a:focus {
+.open-write-us-popup:hover,
+.open-write-us-popup:focus {
   background-color: rgb(202, 44, 55);
 }
 
-.contacts-map a:active {
+.open-write-us-popup:active {
   background-color: rgb(186, 39, 50);
 }
 

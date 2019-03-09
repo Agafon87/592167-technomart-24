@@ -2,7 +2,7 @@
 const formWriteUs = document.querySelector(`.modal-write-us`);
 const modalMap = document.querySelector(`.modal-map`);
 const openWriteUsPopup = document.querySelector(`.open-write-us-popup`);
-const openMap = document.querySelector(`.contacts-map img`);
+const openMap = document.querySelector(`.go-to-google-maps`);
 const closeWriteUsPopup = document.querySelector(`.write-us-close`);
 const closeMap = document.querySelector(`.map-close`);
 const buttonServices = document.querySelectorAll(`.btn-services`);
@@ -121,7 +121,8 @@ if (openWriteUsPopup) {
 }
 
 if(openMap) {
-  openMap.addEventListener(`click`, () => {
+  openMap.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
     modalMap.classList.add(`open-popup`);
     modalMap.style.top = (window.pageYOffset + (document.documentElement.clientHeight / 2) - 225) + `px`;
     modalMap.style.left = (window.pageXOffset + (document.documentElement.clientWidth / 2) - 470) + `px`;
