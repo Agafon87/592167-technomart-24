@@ -606,19 +606,22 @@ body {
   opacity: 0.3;
 }
 
-.current-person a:hover::before,
-.current-person a:focus::before,
-.current-person a:hover,
-.current-person a:focus {
+.icon-login:hover::before,
+.icon-login:focus::before,
+.icon-login:hover,
+.icon-login:focus,
+.icon-logout:hover,
+.icon-logout:focus {
   opacity: 1;
 }
 
-.current-person:active a {
+.icon-login:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.current-person a:active:before,
-.current-person a:active::after {
+.icon-login:active::before,
+.icon-login:active,
+.icon-logout:active {
   opacity: 0.3;
 }
 
@@ -2081,6 +2084,7 @@ body {
 .person-data input:focus,
 .write-us-message textarea:focus {
   border-color: rgb(238, 54, 67);
+  outline: none;
 }
 
 .btn-write-us-submit {
