@@ -23,9 +23,9 @@ const bookmark = document.querySelector(`.top-menu-bookmark`);
 const bookmarkButtons = document.querySelectorAll(`.bookmark`);
 const buttonContinueShopping = document.querySelector(`.btn-continue-shopping`);
 const sendWriteUsForm =document.querySelector(`.btn-write-us-submit`);
-const writeUsPersonName = formWriteUs.querySelector(`#modal-person-name`);
-const writeUsPersonEmail = formWriteUs.querySelector(`#modal-person-email`);
-const writeUsText = formWriteUs.querySelector(`#modal-person-message`);
+const writeUsPersonName = document.querySelector(`#modal-person-name`);
+const writeUsPersonEmail = document.querySelector(`#modal-person-email`);
+const writeUsText = document.querySelector(`#modal-person-message`);
 let basketEnumerator = 0;
 let bookmarkEnumerator = 0;
 
@@ -248,11 +248,13 @@ buttonContinueShopping.addEventListener(`click`, () => {
   btnBannerClose.click();
 });
 
-sendWriteUsForm.addEventListener(`click`, (evt) => {
-  if (!writeUsPersonName.validity.valid || !writeUsPersonEmail.validity.valid || !writeUsText.validity.valid) {
-    formWriteUs.classList.add(`form-error`);
-    setTimeout(() => {
-      formWriteUs.classList.remove(`form-error`);
-    }, 500);
-  }
-});
+if (sendWriteUsForm) {
+  sendWriteUsForm.addEventListener(`click`, (evt) => {
+    if (!writeUsPersonName.validity.valid || !writeUsPersonEmail.validity.valid || !writeUsText.validity.valid) {
+      formWriteUs.classList.add(`form-error`);
+      setTimeout(() => {
+        formWriteUs.classList.remove(`form-error`);
+      }, 500);
+    }
+  });
+}
