@@ -1981,16 +1981,14 @@ body {
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0 10px 50px 0 rgb(0, 0, 0);
   box-shadow: 0 10px 50px 0 rgb(0, 0, 0);
+}
 
+.show-modal-write-us {
   -webkit-animation-name: show-modal-write-us;
   animation-name: show-modal-write-us;
   -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
 }
-
-/* .contacts-map {
-  position: relative;
-} */
 
 .modal-map {
   position: absolute;
@@ -2649,6 +2647,11 @@ body {
   text-transform: uppercase;
 }
 
+.form-error {
+  animation-name: on-error;
+  animation-duration: 0.6s;
+}
+
 @-webkit-keyframes show-modal-write-us {
   0% {
     -webkit-transform: translateX(-2000px);
@@ -2722,5 +2725,17 @@ body {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@keyframes on-error {
+  0%, 20%, 40%, 60%, 80% {
+    transform: translateX(-20px);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
